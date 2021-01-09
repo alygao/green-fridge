@@ -18,9 +18,16 @@ class FridgeFood (models.Model) :
     removed_from_fridge = models.BooleanField(default=True)
 
 
+    # def __str__(self):
+    #     return str(self.id) + ' : ' + self.fridge_food_name + ' will expire in ' + str(self.days_to_expire) + ' days. Bought: ' + str(self.fridge_food_bought_date) 
+    #     + ', Expire: ' + str(self.fridge_food_expire_date) + 'Expired: ' + self.removed_from_fridge
+
     def __str__(self):
-        return self.fridge_food_name + ' will expire in ' + str(self.days_to_expire) + ' days. Bought: ' + str(self.fridge_food_bought_date) 
-        + ', Expire: ' + str(self.fridge_food_expire_date) + 'Expired: ' + self.removed_from_fridge
+        return self.fridge_food_name + ' will expire in ' + str(self.days_to_expire) + ' days. Bought: ' + str(self.fridge_food_bought_date) + ', Expire: ' + str(self.fridge_food_expire_date) + 'Expired: ' + str(self.removed_from_fridge)
+
+    def removeFromFridge(self):
+        self.removed_from_fridge = True
+
 
 class Receipt (models.Model):
     print("555555555555")
