@@ -45,3 +45,9 @@ with open('food.csv') as csv_file:
 
 end_date = start_date + timedelta(duration)
 print ("the expected expiration date is","{0.day} {0:%B %Y}".format(end_date))
+
+#calculate remaining days before expire
+today = "{0.day} {0:%B %Y}".format(datetime.today())
+print("today's date is",today)
+delta = end_date - datetime.today()
+print("there are", delta.days, "left before",food,"expires")
