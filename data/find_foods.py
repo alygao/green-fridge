@@ -1,0 +1,13 @@
+
+def find_foods(strins):
+    ignore = ['receipt', 'subtotal', 'tax', '$', '\f', '.', ':', ',', '?', '#', " "] + [str(i) for i in range(10)]
+    res = []
+    for strin in strins:
+        st = strin.lower()
+        for i in ignore:
+            st = st.replace(i, "")
+        if st != "":
+            res.append(st)
+
+    return res
+
