@@ -16,6 +16,16 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from django.contrib import admin
+from django.urls import path, include                 # add this
+from rest_framework import routers                    # add this
+from upload_recipe import views as upload_recipe_views                            # add this
+
+router = routers.DefaultRouter()                      # add this
+router.register(r'knownFoods', upload_recipe_views.KnownExpiryDateFoodView, 'knownFoods')
+router.register(r'fridgeFoods', upload_recipe_views.FridgeFoodView, 'fridgeFoods')     # add this
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('api/', include(router.urls)),
 ]
