@@ -77,6 +77,8 @@ class ReceiptView(APIView):
         # print(posts_serializer.data)
         # print(temp.get('file'))
         text = convertImageToText(image_address)
+        text = text.split("\n")
+        text = list(filter(None, text))
 
         context = {
           "info" : "success",

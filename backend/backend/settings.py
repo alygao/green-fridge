@@ -34,6 +34,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'corsheaders',
     'rest_framework',
+    'django_cassandra_engine',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
