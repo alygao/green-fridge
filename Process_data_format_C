@@ -1,0 +1,55 @@
+#include<stdio.h>
+#include <iostream>
+#include <string>
+#include <string.h>
+#include <ctype.h>
+using namespace std;
+
+int main()
+{
+    FILE *file1, *file2;
+    int x;
+    char c[1000];
+    char * line = NULL;
+    size_t len = 0;
+    ssize_t read;
+    
+    file1 =fopen("food.txt", "r");
+
+    if (!file1)
+        return 1;
+    
+    while ((read = getline(&line, &len, file1)) != -1) {
+        int l = strlen(line);
+        int pc = 1;
+        char * prod = NULL;
+        char * ref = NULL;
+        char * froz = NULL;
+        for(int i=0;i<l;i++){
+            if(pc==1 && !isdigit(line[i])){
+                printf("%c", line[i]);
+            }
+            else if(pc==1 && isdigit(line[i])){
+                pc = 2;
+                printf("\n");
+                printf("%c", line[i]);
+            }
+            else if(pc==2 && line[i]==' ' && isdigit(line[i+1])){
+                pc=3;
+                printf("\n");
+                printf("%c", line[i]);
+            }
+            else if(pc==2){
+                printf("%c", line[i]);
+            }
+            else{
+                printf("%c", line[i]);
+            }
+        }
+       }
+
+
+    fclose(file1);
+
+    return  0;
+}
