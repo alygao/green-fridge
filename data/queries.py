@@ -3,12 +3,13 @@ import joblib
 recipes = joblib.load("recipes.pkl")
 
 class Queries:
-    def __init__(self, query_type, sort_by=1, *filters):
+    def __init__(self, query_type, sort_by=1, support_info=None, *filters):
         # sort_by - {0: 'id', 1: 'rating', 2: 'total_time_in_second', 3: # of ingredients}
         self.query_type = query_type
         self.sort_by = sort_by
+        self.info = support_info
         self.filters = filters
-
+        
     def apply(self):
         result = None
 
