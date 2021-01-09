@@ -10,3 +10,10 @@ class KnownExpiryDateFoodSerializer(serializers.ModelSerializer):
     class Meta:
         model = KnownExpiryDateFood
         fields = ('known_food_name', 'expiration_days',)
+
+class ReceiptSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = Receipt
+        fields = '__all__'
+        # depth = 1
