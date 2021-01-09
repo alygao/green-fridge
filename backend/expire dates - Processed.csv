@@ -1,0 +1,264 @@
+Product,Refrigerated,Frozen,Category,Refrigerated in days,Frozen in days
+"juice, fruit drinks, punch",7-10 days,8-12 months,Fruit Beverages,7,240
+Butter,1-3 months,6-9 months,Diary Products,30,180
+Buttermilk,1-2 weeks,3 months,Diary Products,7,90
+"Cheddar, swiss, block parmesan",3-4 weeks,6 months,Diary Products,21,180
+"Shredded cheddar, mozzarella",1 month,3-4 months,Diary Products,30,90
+"Cheese, processed slices",1-2 months,Doesn't freeze well,Diary Products,30,Other
+"Cheese, soft (such as Brie, Bel Paese)",1 week,6 months,Diary Products,7,180
+"Cottage cheese, ricotta",1 week,Doesn't freeze well,Diary Products,7,Other
+Cream cheese,2 weeks,Doesn't freeze well,Diary Products,14,Other
+"Cream, whipping, ultrapasteurized",1 month,Do not freeze,Diary Products,30,Other
+"Whipped, sweetened",1 day,1-2 months,Diary Products,1,30
+"Aerosol can, real whipped cream",3-4 weeks,Do not freeze,Diary Products,21,Other
+"Aerosol can, nondairy topping",3 months,Do not freeze,Diary Products,90,Other
+"Cream, half-and-half",3-4 days,4 months,Diary Products,3,120
+"Dips, sour cream based",2 weeks,Do not freeze,Diary Products,14,Other
+"Egg substitutes, liquid",3 days,Do not freeze,Diary Products,3,Other
+"Eggnog, commercial",3-5 days,6 months,Diary Products,3,180
+"Eggs, in shell",3-5 weeks,Do not freeze,Diary Products,21,Other
+"egg raw whites, egg yolks",2-4 days,12 months,Diary Products,2,30
+hard cooked eggs,1 week,Doesn't freeze well,Diary Products,7,Other
+Kefir (fermented milk),1 week,Do not freeze,Diary Products,7,Other
+Margarine,6 months,12 months,Diary Products,180,30
+"Milk, plain or flavored",1 week,3 months,Diary Products,7,90
+Pudding,2 days,Do not freeze,Diary Products,2,Other
+Sour cream,7-21 days,Doesn't freeze well,Diary Products,7,Other
+Yogurt,7-14 days,1-2 months,Diary Products,7,30
+"Tube cans of biscuits, rolls, pizza dough, etc.",Use-by date,Do not freeze,Dough,Other,Other
+Ready-to-bake pie crust,Use-by date,2 months,Dough,Other,60
+Cookie dough,Use by date,2 months,Dough,Other,60
+Pasta,1-2 days,2 months,Dough,1,60
+Pesto or Salsa,3 days,1-2 months,Dough,3,30
+Soy or rice beverage,7-10 days,Do not freeze,Soy products,7,Other
+Tofu,1 week,5 months,Soy products,7,150
+Miso,3 months,Do not freeze,Soy products,90,Other
+"Lean fish (cod, flounder, haddock, halibut, sole, etc.)",1-2 days,6-8 months,Fish,1,180
+"Lean fish (pollock, ocean perch, rockfish, sea trout)",1-2 days,4 months,Fish,1,120
+"Fatty fish (bluefish, mackerel, mullet, salmon, tuna, etc.)",1-2 days,2-3 months,Fish,1,60
+"Caviar, fresh",2 days,Doesn't freeze well,Fish,2,Other
+Cooked fish,3-4 days,1-2 months,Fish,3,30
+Surimi seafood,3-4 days,9 months,Fish,3,270
+"Shrimp, scallops, crayfish, squid",1-2 days,3-6 months,Shellfish,1,90
+"Shucked clams, mussels and oysters",1-2 days,3-4 months,Shellfish,1,90
+"Crab meat, fresh",1-2 days,4 months,Shellfish,1,120
+"Crab meat, pasteurized",3-5 days,4 months,Shellfish,3,120
+"Crab legs, king, dungeness, snow",5 days,9-12 months,Shellfish,5,270
+"Live clams, mussels, crab and oysters",1-2 days,2-3 months,Shellfish,1,60
+Live lobsters,1-2 days,2-3 months,Shellfish,1,60
+Lobster tails,1-2 days,6 months,Shellfish,1,180
+"Cooked shellfish, all",3-4 days,3 months,Shellfish,3,90
+Herring,3-4 days,2 months,Smoked Fish,3,60
+"Salmon, whitefish, cold-smoked",5-8 days,2 months,Smoked Fish,5,60
+"Salmon, whitefish, hot smoked",14 days,6 months,Smoked Fish,1,180
+"Beef, lamb, pork or veal chops, steaks,roasts",3-5 days,4-12 months,Fresh Meat,3,120
+Ground meat,1-2 days,3-4 months,Fresh Meat,1,90
+"Variety meats (liver, tongue, chitterlings, etc.)",1-2 days,3-4 months,Fresh Meat,1,90
+Cooked meats (after home cooking),3-4 days,2-3 months,Fresh Meat,3,60
+Bacon,1 week,1 month,"Processed, Smoked Meat",7,30
+"Corned beef, in pouch with pickling juices",5-7 days,1 month,"Processed, Smoked Meat",5,30
+"Ham, canned (""keep refrigerated"" label)",6-9 months,Do not freeze,"Processed, Smoked Meat",180,Other
+"Ham, fully cooked, whole",1 week,1-2 months,"Processed, Smoked Meat",7,30
+"Ham, fully cooked, slices or half",3-4 days,1-2 months,"Processed, Smoked Meat",3,30
+"Ham, cook before eating",1 week,1-2 months,"Processed, Smoked Meat",7,30
+"Hot dogs, sealed in package",2 weeks,1-2 months,"Processed, Smoked Meat",14,30
+"Hot dogs, after opening",1 week,1-2 months,"Processed, Smoked Meat",7,30
+"Lunch meats, sealed in package",2 weeks,1-2 months,"Processed, Smoked Meat",14,30
+"Lunch meats, after opening",3-5 days,1-2 months,"Processed, Smoked Meat",3,30
+"Sausage, raw, bulk type",1-2 days,1-2 months,"Processed, Smoked Meat",1,30
+"Sausage, smoked links, patties",1 week,1-2 months,"Processed, Smoked Meat",7,30
+"Sausage, hard, dry (pepperoni), sliced",2-3 weeks,1-2 months,"Processed, Smoked Meat",14,30
+"Chicken or turkey, whole",1-2 days,12 months,"Poultry, fresh",1,30
+"Chicken or turkey, parts",1-2 days,9 months,"Poultry, fresh",1,270
+"Duckling or goose, whole",1-2 days,6 months,"Poultry, fresh",1,180
+Giblets,1-2 days,3-4 months,"Poultry, fresh",1,90
+"Chicken nuggets, patties",1-2 days,1-3 months,"Poultry, cooked or processed",1,30
+Cooked poultry dishes,3-4 days,4-6 months,"Poultry, cooked or processed",3,120
+Fried chicken,3-4 days,4 months,"Poultry, cooked or processed",3,120
+Ground turkey or chicken,1-2 days,3-4 months,"Poultry, cooked or processed",1,90
+"Lunch meats, sealed in package",2 weeks,1-2 months,"Poultry, cooked or processed",14,30
+"Lunch meats, after opening",3-5 days,1-2 months,"Poultry, cooked or processed",3,30
+Pieces covered with broth or gravy,1-2 days,6 months,"Poultry, cooked or processed",1,180
+Rotisserie chicken,3-4 days,4 months,"Poultry, cooked or processed",3,120
+Bagels,2 months,1-2 weeks,Frozen items,60,7
+"Bread Dough, commercial",Use-by date,4-7 days,Frozen items,Other,4
+"Burritos, sandwiches",2 months,3-4 days,Frozen items,60,3
+Egg substitutes,12 months,Date on Carton,Frozen items,30,Other
+"Fish, breaded",3-6 months,Do not defrost. Cook frozen.,Frozen items,90,Other
+"Fish, raw",6 months,1-2 days,Frozen items,180,1
+"Fruit such as berries, melons",4-6 months,4-5 days,Frozen items,120,4
+Guacamole,3-4 months,3-4 days,Frozen items,90,3
+Ice cream,2-4 months,0,Frozen items,60,Other
+Juice concentrates,6-12 months,7-10 days,Frozen items,180,7
+Lobster tails,3 months,2 days,Frozen items,90,2
+"Pancakes, Waffles",2 months,3-4 days,Frozen items,60,3
+"Sausages, uncooked",1-2 months,1-2 days,Frozen items,30,1
+precooked,1-2 months,1 week,Frozen items,30,7
+"Sherbet, sorbet",2-4 months,0,Frozen items,60,Other
+"Shrimp, shellfish",12 months,1-2 days,Frozen items,30,1
+Soy crumbles and hotdogs,9 months,3-4 days,Frozen items,270,3
+Soy meat substitutes,12-18 months,3-4 days,Frozen items,30,3
+Tempeh,12 months,1-2 weeks,Frozen items,30,7
+"Topping, whipped",6 months,2 weeks,Frozen items,180,14
+"TV Dinners, entrees, breakfast",3 months,Do not defrost. Cook frozen.,Frozen items,90,Other
+Vegetables,8 months,3-4 days,Frozen items,240,3
+"Main dishes or meals, hot or refrigerated",3-4 days,2-3 months,Deli foods,3,60
+Meats covered with gravy or broth,1-2 days,6 months,Deli foods,1,180
+Commercial brand vacuum packed dinners with USDA seal,2 weeks,Does not freeze well,Deli foods,14,Other
+"Chicken, rotisserie or fried",3-4 days,4 months,Deli foods,3,120
+"Luncheon meats, store-sliced",3-5 days,1-2 months,Deli foods,3,30
+Pate,1-2 days,1-2 months,Deli foods,1,30
+"Cheese, store-sliced, hard cheese, such as cheddar or swiss",3-4 weeks,6 months,Deli foods,21,180
+"Cheese, soft (such as brie, bel paese, goat cheese, fresh mozzarella)",1 week,6 months,Deli foods,7,180
+"Salads containing meat, fish, poultry or eggs",3-4 days,Don’t freeze.,Deli foods,3,Other
+"Salads, vegetable",3-5 days,Don’t freeze.,Deli foods,3,Other
+"Side dishes such as cooked vegetables, rice or potatoes",3-4 days,1-2 months,Deli foods,3,30
+Olives,2 weeks,Don’t freeze,Deli foods,14,Other
+Pudding,2 days after opening,Don't freeze,Deli foods,2,Other
+"Fruit, cut",4 days after opening,Don't freeze,Deli foods,4,Other
+Cheesecake,1 week,2-3 months,Deli foods,7,60
+Apples,1-2 days,3 weeks,Fruits,1,21
+Apricots,Until ripe,2-3 days,Fruits,Other,2
+Avocados,Until ripe,3-4 days,Fruits,Other,3
+Bananas,Until ripe,"2 days, skin will blacken",Fruits,Other,2
+"Berries, cherries",,1-2 days,Fruits,Other,1
+Citrus Fruit,10 days,1-2 weeks,Fruits,1,7
+"Coconuts, fresh",1 week,2-3 weeks,Fruits,7,14
+Grapes,1 day,1 week,Fruits,1,7
+Kiwi Fruit,Until ripe,3-4 days,Fruits,Other,3
+Melons,1-2 days,3-4 days,Fruits,1,3
+"Papaya, mango",3-5 days,1 week,Fruits,3,7
+"Peaches, nectarines",Until ripe,3-4 days,Fruits,Other,3
+"Pears, Plums",3-5 days,3-4 days,Fruits,3,3
+"Artichokes, whole",1-2 days,1-2 weeks,Vegetables,1,7
+Asparagus,,3-4 days,Vegetables,Other,3
+"Beans, green or wax",,3-4 days,Vegetables,Other,3
+Beets,1 day,7-10 days,Vegetables,1,7
+Bok choy,,2-3days,Vegetables,Other,2
+"Broccoli, raab, rapini",,3-5 days,Vegetables,Other,3
+Brussels sprouts,,3-5 days,Vegetables,Other,3
+Cauliflower,,3-5 days,Vegetables,Other,3
+Cabbage,,1-2 weeks,Vegetables,Other,7
+"Carrots, parsnips",,3 weeks,Vegetables,Other,21
+Celery,,1-2 weeks,Vegetables,Other,7
+Corn on the cob,,1-2 days,Vegetables,Other,1
+Cucumbers,,4-5 days,Vegetables,Other,4
+Eggplant,1 day,3-4 days,Vegetables,1,3
+Garlic,1 month,1-2 weeks,Vegetables,30,7
+Ginger Root,1-2 days,1-2 weeks,Vegetables,1,7
+Greens,,1-2 days,Vegetables,Other,1
+"Herbs, fresh",,7-10 days,Vegetables,Other,7
+Leeks,,1-2 weeks,Vegetables,Other,7
+"Lettuce, iceberg",,1-2 weeks,Vegetables,Other,7
+"Lettuce, leaf",,3-7 days,Vegetables,Other,3
+Mushrooms,,2-3 days,Vegetables,Other,2
+Okra,,2-3 days,Vegetables,Other,2
+Onions,2-3 weeks,2 months,Vegetables,14,60
+"Parsley, cilantro",,1 week,Vegetables,Other,7
+"Peppers, bell or chile",,4-5 days,Vegetables,Other,4
+Potatoes,1-2 months,1-2 weeks,Vegetables,30,7
+Radishes,,10-14 days,Vegetables,Other,1
+Rutabagas,1 week,2 weeks,Vegetables,7,14
+Spinach,,1-2 days,Vegetables,Other,1
+Summer Squash,1 week,4-5 days,Vegetables,7,4
+Winter Squash,1 week,2 weeks,Vegetables,7,14
+Turnips,,2 weeks,Vegetables,Other,14
+Tomatoes,Until ripe,2-3 days,Vegetables,Other,2
+Diet powder mixes,6 months,,Shelf-stable foods,180,Other
+"Extracts, vanilla, lemon, etc",3 years,,Shelf-stable foods,1095,Other
+"Fruits, dried",6 months,6 months,Shelf-stable foods,180,180
+"Garlic, chopped",18 months,,Shelf-stable foods,30,Other
+Gelatin,18 months,,Shelf-stable foods,30,Other
+"Gravy, jars and cans",2-5 years,1-2 days,Shelf-stable foods,730,1
+"Herbs, dried",1-2 years,,Shelf-stable foods,365,Other
+Honey,12 months,,Shelf-stable foods,30,Other
+"Jams, jellies, preserves",12 months,6 months,Shelf-stable foods,30,180
+"Jerky, commercially dried",12 months,2-3 months,Shelf-stable foods,30,60
+"Juice, boxes",4-6 months,8-12 days,Shelf-stable foods,120,8
+"Lentils, dried",12 months,,Shelf-stable foods,30,Other
+"Marshmallows,",2-4 months,,Shelf-stable foods,60,Other
+"Milk, canned evaporated",12 months,4-5 days,Shelf-stable foods,30,4
+Molasses,12 months,,Shelf-stable foods,30,Other
+"Mushrooms, dried",6 months,,Shelf-stable foods,180,Other
+"Oils, olive or vegetable",6 months,4 months,Shelf-stable foods,180,120
+"Nuts, jars or cans",12 months,4-6 months,Shelf-stable foods,30,120
+"Pasta, dry, without eggs",2 years,,Shelf-stable foods,730,Other
+Dry egg noodles,2 years,,Shelf-stable foods,730,Other
+"Peanut butter, commercial",6-9 months,,Shelf-stable foods,180,Other
+"Peas, dried split",12 months,,Shelf-stable foods,30,Other
+Pectin,Use by pkg. date,,Shelf-stable foods,Other,Other
+"Popcorn, dry kernels in jar",2 years,,Shelf-stable foods,730,Other
+Commercially popped in bags,2-3 months,,Shelf-stable foods,60,Other
+Potato chips,2 months,,Shelf-stable foods,60,Other
+"Potatoes, instant",6-12 months,,Shelf-stable foods,180,Other
+Pudding mixes,12 months,,Shelf-stable foods,30,Other
+Rice,2 years,6 months,Shelf-stable foods,730,180
+"Sauce mixes, nondairy",2 years,,Shelf-stable foods,730,Other
+Soda such as carbonated cola drinks,3 months,2-3 days,Shelf-stable foods,90,2
+"Soup mixes, dry bouillon",12 months,,Shelf-stable foods,30,Other
+"Soy or rice beverage,",3 months,7-10 days,Shelf-stable foods,90,7
+Spaghetti sauce in jars,18 months,4 days,Shelf-stable foods,30,4
+"Baby food, jars or cans, fruits & vegetables",Use-by date,2-3 days,Shelf-stable foods,Other,2
+meats & eggs,Use-by date,1 day,Shelf-stable foods,Other,1
+"cereal, dry mixes",Use-by date,,Shelf-stable foods,Other,Other
+Formula,Use-by date,1-2 days,Shelf-stable foods,Other,1
+"Bacon Bits, Imitation",4 months,refer to jar,Shelf-stable foods,120,Other
+"Beans, Dried",12 months,,Shelf-stable foods,30,Other
+"Canned goods, low acid (such as meat, poultry, fish, gravy, stew, soups, beans, carrots, corn, pasta, peas, potatoes, spinach)",2-5 years,3-4 days,Shelf-stable foods,730,3
+"Canned goods, high acid (such as juices, fruit, pickles, sauerkraut, tomato soup, and foods in vinegar-based sauce)",12-18 months,5-7 days,Shelf-stable foods,30,5
+"Cereal, ready-to-eat",6-12 months,,Shelf-stable foods,180,Other
+"Cook before eating (oatmeal, etc.)",12 months,,Shelf-stable foods,30,Other
+"Coffee, whole beans",1-3 weeks,2 weeks,Shelf-stable foods,7,14
+"coffee non-vacuum bag, ground, in cans",2 years,2 weeks,Shelf-stable foods,730,14
+"coffee instant, jars and tins",12 months,2 weeks,Shelf-stable foods,30,14
+Spices,2-4 years total,,Shelf-stable foods,730,Other
+"Sugar, brown",4 months,,Shelf-stable foods,120,Other
+"Syrup, pancake",12 months,12 months,Shelf-stable foods,30,30
+Tapioca,12 months,,Shelf-stable foods,30,Other
+"Tea, bags",18 months,,Shelf-stable foods,30,Other
+Toaster pastries,6 months,,Shelf-stable foods,180,Other
+"Tomatoes, sun dried,",12 months,6-12 months,Shelf-stable foods,30,180
+Vinegar,2 years,,Shelf-stable foods,730,Other
+"Water, bottled",1-2 years,,Shelf-stable foods,365,Other
+Worcestershire Sauce,1 year,,Shelf-stable foods,365,Other
+"Bread, commercial",2-4 days,7-14 days,Backery items,2,7
+"Bread, flat",2-4 days,4-7 days,Backery items,2,4
+"Cakes, angel food",1-2 days,1 week,Backery items,1,7
+"chiffon, sponge cake",1-2 days,1 week,Backery items,1,7
+chocolate cake,1-2 days,1 week,Backery items,1,7
+Cheesecake,,1 week,Backery items,Other,7
+"Cookies, bakery",2-3 weeks,2 months,Backery items,14,60
+"Croissants, butter",1 day,1 week,Backery items,1,7
+"Doughnuts, glazed or cake",1-2 days,1 week,Backery items,1,7
+"Eclairs, dairy cream filled",,3-4 days,Backery items,Other,3
+Muffins,1-2 days,1 week,Backery items,1,7
+"Pastries, danish",1-2 days,1 week,Backery items,1,7
+"Pies, cream",,3-4 days,Backery items,Other,3
+Quiche,2 hours,3-4 days,Backery items,Other,3
+"Rolls, yeast, baked",3-4 days,1 week,Backery items,3,7
+Baking powder,6 months,,Baking Ingredients,180,Other
+Baking soda,18 months,,Baking Ingredients,30,Other
+Biscuit or pancake mix,15 months,,Baking Ingredients,30,Other
+"Cake, Brownie, Bread Mixes",12-18 months,,Baking Ingredients,30,Other
+"Cornmeal, regular, degerminated",6-12 months,12 months,Baking Ingredients,180,30
+stone ground or blue,1 month,2-3 months,Baking Ingredients,30,60
+Cornstarch,18 months,,Baking Ingredients,30,Other
+"Flour, white",6-12 months,,Baking Ingredients,180,Other
+"Flour, whole wheat",1 month,6-8 months,Baking Ingredients,30,180
+"Frosting, canned",10 months,1 week,Baking Ingredients,30,7
+Frosting mixes,12 months,,Baking Ingredients,30,Other
+"Chocolate, unsweetened and semi-sweet, solid",18-24 months,,Baking Ingredients,30,Other
+Chocolate syrup,2 years,6 months,Baking Ingredients,730,180
+Cocoa and Cocoa Mixes,Indefinitely,,Baking Ingredients,Other,Other
+Barbecue sauce,12 months,4 months,Condiments,30,120
+Ketchup,12 months,6 months,Condiments,30,180
+Chutney,12 months,1-2 months,Condiments,30,30
+Horseradish,12 months,3-4 months,Condiments,30,90
+Mayonnaise,2-3 months,2 months,Condiments,60,60
+Mustard,12 months,12 months,Condiments,30,30
+Olives,12-18 months,2 weeks,Condiments,30,14
+Pickles,12 months,1-2 weeks,Condiments,30,7
+Salad Dressings,10-12 months,3 months,Condiments,30,90
+Salsa,12 months,1 month,Condiments,30,30
+COOKIES,2 months,8-12 months,Condiments,60,240
+CRACKERS,8 months,3-4 months,Condiments,240,90

@@ -14,18 +14,23 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
+# from django.conf import settings
+# from django.conf.urls.static import static
 
-from django.contrib import admin
-from django.urls import path, include                 # add this
-from rest_framework import routers                    # add this
-from upload_recipe import views as upload_recipe_views                            # add this
+# from django.contrib import admin
+# from django.urls import path, include                 # add this
+# from rest_framework import routers                    # add this
+# from upload_recipe import views as upload_recipe_views                            # add this
 
-router = routers.DefaultRouter()                      # add this
-router.register(r'knownFoods', upload_recipe_views.KnownExpiryDateFoodView, 'knownFoods')
-router.register(r'fridgeFoods', upload_recipe_views.FridgeFoodView, 'fridgeFoods')     # add this
+# router = routers.DefaultRouter()                      # add this
+# router.register(r'knownFoods', upload_recipe_views.KnownExpiryDateFoodView, 'knownFoods')
+# router.register(r'fridgeFoods', upload_recipe_views.FridgeFoodView, 'fridgeFoods')     # add this
+# router.register(r'receipts', upload_recipe_views.ReceiptView.as_view(), name='receipts')     # add this
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/', include(router.urls)),
-]
+    path('api/', include('upload_recipe.urls')),
+] 
+# + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
