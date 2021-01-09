@@ -7,6 +7,8 @@ dataset_size = len(recipes)
 import random
 import pandas as pd
 
+def format_strings(strin):
+    return strin.title()
 
 class Queries:
     def __init__(self, ingredient=str, query_type=1):
@@ -22,6 +24,7 @@ class Queries:
             if len(self.result) < 4:
                 tmp = self.result
                 self.result = recipes
+                self.ingredient = format_strings(self.ingredient)
                 self.result = pd.concat([self.query_based_on_recipe_name(), tmp])
 
         else:  # recommended dishes
@@ -43,7 +46,6 @@ class Queries:
         if tp == 1:
             self.result = self.result[self.result.recipeName.str.contains(self.ingredient)]
         else:
-            self.result = self.result[
-                self.result.ingredients.apply(lambda df: self.ingredient in ' '.join([str(elem) for elem in df]))]
+            self.result = self.result[self.result.ingredients.apply(lambda df: self.ingredient in ' '.join([str(elem) for elem in df]))]
 
         return self.result
