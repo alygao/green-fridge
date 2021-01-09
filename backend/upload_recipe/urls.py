@@ -3,4 +3,6 @@ from . import views
 
 urlpatterns = [
     path('receipts/', views.ReceiptView.as_view(), name= 'receipts_list'),
+    path('fridgeFoods/<int:pk>/', views.FridgeFoodView.as_view()),
+    path('fridgeFoods/', views.FridgeFoodView.as_view()),
 ]
