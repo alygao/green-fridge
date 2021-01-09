@@ -2,41 +2,48 @@ import joblib
 
 recipes = joblib.load("recipes.pkl")
 
+dataset_size = len(recipes)
+
+import random
+import pandas as pd
+
+
 class Queries:
-    def __init__(self, query_type, sort_by=1, support_info=None, *filters):
-        # sort_by - {0: 'id', 1: 'rating', 2: 'total_time_in_second', 3: # of ingredients}
+    def __init__(self, ingredient=str, query_type=1):
+        # query_type - Int >= 0
+        self.ingredient = ingredient
         self.query_type = query_type
-        self.sort_by = sort_by
-        self.info = support_info
-        self.filters = filters
-        
+        self.result = recipes
+
     def apply(self):
-        result = None
 
-        if self.query_type == 0: # recipeName
-            pass
-        elif self.query_type == 1: # course
-            pass
-        elif self.query_type == 2: # ingredients
-            pass
-        else: # recommended dishes
-            pass
+        if self.query_type == 1:  # ingredients
+            self.result = self.query_based_on_ingredients()
+            if len(self.result) < 4:
+                tmp = self.result
+                self.result = recipes
+                self.result = pd.concat([self.query_based_on_recipe_name(), tmp])
 
-        pass # call sort_by decorator
-        for flt in self.filters:
-            pass # call each filter decorators
+        else:  # recommended dishes
+            random.seed(42)
+            show_size = 20
+            show = [random.randint(0, dataset_size) for i in range(show_size)]
+            self.result = recipes.iloc[show]
 
-        return result
+        return self.result
 
-    def rating_filter(self, threshold): # return result of rating > threshold
-        pass
 
-    def cuisine_filter(self, cuisine):
-        pass
+    def query_based_on_recipe_name(self):
+        return self.query_based_on_recipe_name_or_ingredients(1)
 
-    def query_based_on_recipe_name_or_ingredients (self, *food_name):
-        pass
+    def query_based_on_ingredients(self):
+        return self.query_based_on_recipe_name_or_ingredients(0)
 
-    def query_based_on_course (self, *course):
-        pass
+    def query_based_on_recipe_name_or_ingredients(self, tp):
+        if tp == 1:
+            self.result = self.result[self.result.recipeName.str.contains(self.ingredient)]
+        else:
+            self.result = self.result[
+                self.result.ingredients.apply(lambda df: self.ingredient in ' '.join([str(elem) for elem in df]))]
 
+        return self.result
