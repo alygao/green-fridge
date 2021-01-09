@@ -10,8 +10,7 @@ recipes["id"] = [i for i in range(1, len(recipes) + 1)]
 
 
 def split_strings(strin):
-    s = str(strin).replace("[", "")
-    s = s.replace("]", "")
+    s = str(strin).replace("[", "").replace("]", "").replace("?", "")
     return s.split(", ")
 
 
