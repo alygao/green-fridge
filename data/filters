@@ -17,8 +17,8 @@ class Filter:
 
     def rating_filter(self):  # return self.result of rating > threshold
         threshold = self.info
-        self.result.rating.fillna(4.0, inplace=True)
-        return self.result.query('rating >= @threshold')
+        #self.result.rating.fillna(4.0, inplace=True)
+        return self.result[self.result.rating.notnull() & (self.result.rating >= threshold)]
 
     def course_filter(self):
         return self.result[self.result.course.apply(lambda df: self.info in df)]
