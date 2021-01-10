@@ -8,32 +8,25 @@ import joblib
 
 recipes = joblib.load("recipes.pkl")
 
-class Sort_recipe:
-    # sort_by - {0: 'id', 1: 'rating', 2: 'total_time_in_second'}
-    def __init__(self, recipe, sort_by=1, ascending=True):
-        self.result = recipe
-        self.sort_by = sort_by
-        self.ascending = ascending
 
-    def apply(self):
+def show(strings, sort_by=0, ascending=True, filters=None):
+    sp = Show_page(find_foods(strings), filters)
+    result = sp.apply()
+    if sort_by == 0:
+        return result.sort_index(ascending=ascending)
 
-        if self.sort_by == 0:
-            return self.result.sort_index(ascending=self.ascending)
+    elif sort_by == 1:
+        return result.sort_value(by='rating', ascending=ascending)
 
-        elif self.sort_by == 1:
-            return self.result.sort_value(by='rating', ascending=self.ascending)
-
-        elif self.sort_by == 2:
-            return self.result.sort_value(by='totalTimeInSeconds', ascending=self.ascending)
+    elif sort_by == 2:
+        return result.sort_value(by='totalTimeInSeconds', ascending=ascending)
 
 
 class Show_page:
-    def __init__(self, strings, sort_by=1, ascending=True, filters=None):
+    def __init__(self, foods, filters=None):
         # filters - a list of tuples of length 2,
-           # example: [("rating", 4.0), ("cuisine", "Chinese"), ("course", "Desserts")]
-        self.foods = find_foods(strings)
-        self.sort_by = sort_by
-        self.ascending = ascending
+        # example: [("rating", 4.0), ("cuisine", "Chinese"), ("course", "Desserts")]
+        self.foods = foods
         self.filters = filters if filters is not None else []
 
         id_ = set()
@@ -44,16 +37,15 @@ class Show_page:
 
         self.result = recipes[recipes.id.apply(lambda i: i in id_)]
 
+    def apply(self):
+
         for flt in self.filters:
+            if self.result.empty:
+                return self.result
+
             if flt[0] == "rating":
                 self.result = Filter(self.result, flt[0].lower(), float(flt[1])).apply()
             else:
                 self.result = Filter(self.result, flt[0].lower(), format_strings(flt[1])).apply()
 
-    def no_sorting(self):
         return self.result
-
-    def apply(self):
-        return Sort_recipe(self.no_sorting(), self.sort_by, self.ascending).apply()
-
-
