@@ -1,4 +1,4 @@
-# Green Fridge
+# Green Fridge 🥰🌱
 
 A web application that acts as your personal virtual fridge. It uses React and Python to establish a well-designed webpage.
 
