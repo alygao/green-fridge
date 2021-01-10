@@ -32,7 +32,6 @@ p {
   font-size: 20px;
   line-height: 23px;
   padding: 0px 12px;
-  /* display: flex; */
   align-items: center;
   text-align: center;
   color: #000000;
@@ -51,7 +50,6 @@ input {
 
 .buttons {
   display:flex;
-  // background-color: purple;
   flex-direction: column;
   justify-content: center;
 }
@@ -73,9 +71,6 @@ input {
 }
 
 .custom-file-upload {
-  // border: 1px solid #ccc;
-  
-  // background-color:red;
   color: white;
   display: inline-block;
   padding: 0px 12px;
@@ -94,10 +89,7 @@ input {
 
 .submit-button {
   background-color: #565656;
-  // align-items: center;
   display: inline-block;
-  // justify-content: center;
-  // text-align: center;
   width: 15vw;
   height: 60px;
   margin-top: 2vh;
@@ -111,7 +103,6 @@ input {
 }
 
 .submit-file{
-  // background-color: red;
   color: white;
   display: inline-block;
   padding: 0px 12px;
@@ -123,8 +114,6 @@ input {
   line-height: 60px;
 
   display: flex;
-  // flex-direction: column;
-  // align-items: center;
   justify-content: center;
 }
 

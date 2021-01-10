@@ -27,8 +27,6 @@ function Home() {
     const [query, setQuery] = useState(null);
 
     useEffect(() => {
-      // You need to restrict it at some point
-      // This is just dummy code and should be replaced by actual
       if (!expiredItemsInFridge) {
         getExpiredItemsInFridge();
       }
@@ -38,7 +36,7 @@ function Home() {
       if (!recipe) {
         getRecipe();
       }
-    }, []);
+    });
 
     const getRecipe = async () => {
       console.log('aaa');
@@ -60,37 +58,18 @@ function Home() {
     console.log('ccc');
     const response = await fetch(`http://${API_URL}/api/fridgeFoods/`);
     const data = await response.json();
-    // for (var i = 0; i < data.length; i++) {
-    //   if (data[i].days_to_expire == 0) {
-    //     delete data[i];
-    //   } else {
-    //     break;
-    //   }
-    // }
-    // setTimeout(function() {
-
-    // }, 1000);
+    for (var i = 0; i < data.length; i++) {
+      if (data[i].days_to_expire == 0) {
+        data.splice(0,1)
+      } else {
+        break;
+      }
+    }
     setAboutToExpireItem(data[0])
     console.log(data[0]);
     setQuery(data[0])
-    // setRecipe(null)
-    // getRecipe();
+ 
   };
-
-
-
-
-  // async fetchExpiredItemsInFridgeAsync() {
-  //   try {
-  //       this.setState({...this.state, isFetching: true});
-  //       const response = await axios.get(http://localhost:8000/api/fridgeFoods/expired'L);
-  //       this.setState({users: response.data, isFetching: false});
-  //   } catch (e) {
-  //       console.log(e);
-  //       this.setState({...this.state, isFetching: false});
-  //   }
-  // };
-
 
     return (
       <div className="home-page">
@@ -131,8 +110,8 @@ function Home() {
             ?
               <p>
                   The following recipe has been recommended to you because it incorporates {aboutToExpireItem.fridge_food_name} which is the closest to expiring. 
-                  Your recommended recipe is: 
-                  <a href='https://www.epicurious.com/recipes/food/views/frozen-yogurt-bark'>Frozen Yogurt Bark!</a>
+                  Your recommended recipe is :  
+                  <a href={recipe.recipe.url}>{recipe.recipe.label}</a>
               </p>
             :
               <p>You have no items in your fridge. Hurry up and go shopping! Sustainable eating does not mean you need to starve yourself!</p>

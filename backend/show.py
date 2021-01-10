@@ -24,8 +24,6 @@ def show(strings, sort_by=0, ascending=True, filters=None):
 
 class Show_page:
     def __init__(self, foods, filters=None):
-        # filters - a list of tuples of length 2,
-        # example: [("rating", 4.0), ("cuisine", "Chinese"), ("course", "Desserts")]
         self.foods = foods
         self.filters = filters if filters is not None else []
 

@@ -52,8 +52,7 @@ class UploadReceipt extends Component {
           console.log(res.data);
         })
         .catch(err => console.log(err))
-    alert('Any food items have now been added to your fridge. Happy Eating!')
-    // this.props.router.push('/homepage')  
+    alert('Any food items have now been added to your fridge. Happy Eating!') 
     window.location.href = "/homepage";
   };
 

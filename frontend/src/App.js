@@ -13,8 +13,6 @@ import {
   Switch,
   Route,
   Link,
-  // useParams,
-  // withRouter
 } from "react-router-dom";
 
 
@@ -49,7 +47,6 @@ import {
 export default App;
 
 function InitialPage(props) {
-  // const { joinNow, stepsToSustainabil, ellipse1, carrot, text1 } = props;
   return (
     <div className="initial-page">  
       <div className="heading">

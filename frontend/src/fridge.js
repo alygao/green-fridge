@@ -79,8 +79,6 @@ function WhatsInYourFridge(props) {
     
     const [fridgeItems, setFridgeItems] = useState(null);
     useEffect(() => {
-      // You need to restrict it at some point
-      // This is just dummy code and should be replaced by actual
       if (!fridgeItems) {
         getFridgeItems();
       }

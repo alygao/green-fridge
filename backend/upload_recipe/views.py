@@ -25,9 +25,7 @@ class ExpiredFridgeFoodView(APIView):
       # return a sorted order of fridge foods, with those expiring soon at the beginning
       print( request.query_params )
       print("$$$$$$$$$$$$$$")
-      # print(self.kwargs)
       today = date.today
-      # fridgeFoods = FridgeFood.objects.all().filter(removed_from_fridge=False, fridge_food_expire_date<= today)
       fridgeFoods = FridgeFood.objects.all().filter(removed_from_fridge=False, fridge_food_expire_date__lt = datetime.now())
       serializer = FridgeFoodSerializer(fridgeFoods, many=True)
       return Response(serializer.data)
@@ -36,7 +34,7 @@ class ExpiredFridgeFoodView(APIView):
 class FridgeFoodView(APIView):       
 
   def get_object(self, pk):
-  # may not need 
+    # may not need 
         try:
             print("pk" )
             print(pk)
@@ -56,48 +54,35 @@ class FridgeFoodView(APIView):
   def get(self, request, *args, **kwargs):
   # return a sorted order of fridge foods, with those expiring soon at the beginning
       print( request.query_params )
-      print("$$$$$$$$$$$$$$")
       # print(self.kwargs)
       if (len(self.kwargs) == 0):
-            print("no pk")
+            # print("no pk")
             fridgeFoods = FridgeFood.objects.all().filter(removed_from_fridge=False).order_by('days_to_expire')
             serializer = FridgeFoodSerializer(fridgeFoods, many=True)
       else:
-            print("pk = " + str(self.kwargs['pk']))
+            # print("pk = " + str(self.kwargs['pk']))
             pk = self.kwargs['pk']
-            # fridgeFood = FridgeFood.get(pk=pk, removed_from_fridge=False)
             fridgeFood = get_object_or_404(FridgeFood, pk = pk, removed_from_fridge=False)
             serializer = FridgeFoodSerializer(fridgeFood, many=False)
-      # for arg in args:
-      #       print(arg)
-      print(args)
       return Response(serializer.data)
       
-
-
-      # return Response(serializer.data)
-
   def put(self, request, pk, format=None):
   # only called when an fridge food item has been removed from fridge
     print("82347389247389247389247")
     print(str(pk))
     fridgeFood = get_object_or_404(FridgeFood, pk = pk, removed_from_fridge=False)
     if fridgeFood == None:
-          print('NONE')
+          # print('NONE')
           response = {
             "error": "item not found"
           }
           return Response(response, status=status.HTTP_404_NOT_FOUND)
     else:
       print(fridgeFood)
-      # fridgeFood['removed_from_fridge'] = True
       fridgeFood.removeFromFridge()
       print(fridgeFood)
       fridgeFood.save()
-      # serializer = FridgeFoodSerializer(fridgeFood, data=request.data)
-      # if serializer.is_valid():
-      #     serializer.save()
-      print('DONE')
+      # print('DONE')
       response = {
         "message": "item is removed from fridge"
       }
@@ -133,33 +118,14 @@ class FridgeFoodView(APIView):
         print(e)
         print(name + " doesn't exist in known database")
         return Response(status=status.HTTP_400_BAD_REQUEST)  
-
-      # posts_serializer = FridgeFoodSerializer(data=request.data)
-      # if posts_serializer.is_valid():
-      #     posts_serializer.save()
-      #     print("fridge food received in backend")
-        
-        # print('error', posts_serializer.errors)
   
   
 class ReceiptView(APIView):
-  # parser_classes = (MultiPartParser, FormParser)
-  # print("444444444444444") 
-  # def get(self, request, *args, **kwargs):
-  #     print("2222222222")
-  #     receipts = Receipt.objects.all()
-  #     serializer = ReceiptSerializer(receipts, many=True)
-  #     return Response(serializer.data)
-
   def post(self, request, *args, **kwargs):
-      # print('///////////////////////')
       posts_serializer = ReceiptSerializer(data=request.data)
       if posts_serializer.is_valid():
         posts_serializer.save()
-        # console.log("hello, received in backend")
-        
         print(request.data)
-        # print('???????')
         image_address = posts_serializer.data.get('file')
         image_address = image_address[1:]
         # print(posts_serializer.data)
@@ -172,13 +138,8 @@ class ReceiptView(APIView):
         text = text.split("\n")
         text = list(filter(None, text))
         text = find_foods(text)
-
-        # addItemsToDatabase(text);
-
-        # def addItemsToDatabase(strings):
         for string in text:
           string = string.lower()
-          # print('before try')
           try:
             knownFoodInDatabase = KnownExpiryDateFood.objects.get(known_food_name = string)
             if (knownFoodInDatabase != None) :
@@ -190,22 +151,15 @@ class ReceiptView(APIView):
               print(new_fridge_food)
               new_fridge_food.save()
             else:
-              # print('not found')
               continue
-            # print('after if else')
           except Exception as e:
             print(e)
             print(string + " doesn't exist in known database")
-
-
-
 
         context = {
           "info" : "success",
           "text" : text
         }
-              
-
         return Response(context, status=status.HTTP_201_CREATED)
       else:
         print('error', posts_serializer.errors)
@@ -221,7 +175,6 @@ def convertImageToText (image_name):
     print(image_name)
     img = Image.open(image_name)
     text = tess.image_to_string(img)
-    # print(text)
     return text
 
 
@@ -234,6 +187,5 @@ def find_foods(strings):
             st = st.replace(i, "")
         if st != "":
             res.append(st)
-
     return res
 

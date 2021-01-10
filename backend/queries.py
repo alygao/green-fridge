@@ -12,7 +12,6 @@ def format_strings(strin):
 
 class Queries:
     def __init__(self, ingredient=str, query_type=1):
-        # query_type - Int >= 0
         self.ingredient = ingredient
         self.query_type = query_type
         self.result = recipes
