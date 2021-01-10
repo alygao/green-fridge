@@ -12,4 +12,3 @@ def find_foods(strins):
             res.append(st)
 
     return res
-
