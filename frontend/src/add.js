@@ -8,6 +8,9 @@ import {
     Link,
   } from "react-router-dom";
 
+  const API_URL = 'bluewater10000.pythonanywhere.com'
+  // const API_URL = 'localhost:8000'
+
 function Add() {
     return <AddFridgeItem />;
 }
@@ -43,7 +46,7 @@ function AddFridgeItem(props) {
         fridge_food_name: value 
       
       };
-      let url = 'http://localhost:8000/api/fridgeFoods/';
+      let url = `http://${API_URL}/api/fridgeFoods/`;
       axios.post(url, fridgeFoodItem)
       .then(res => {
           console.log(res.data);

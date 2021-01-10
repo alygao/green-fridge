@@ -16,6 +16,9 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 
+const API_URL = 'bluewater10000.pythonanywhere.com'
+// const API_URL = 'localhost:8000'
+
 function View() {
     return <WhatsInYourFridge/>;
 }
@@ -39,7 +42,7 @@ function WhatsInYourFridge(props) {
 
   async function removeFromFridge (id) { 
     console.log('id', id)
-    const res = await axios.put(`http://localhost:8000/api/fridgeFoods/${id}/`);
+    const res = await axios.put(`http://${API_URL}/api/fridgeFoods/${id}/`);
   }
   const StyledTableCell = withStyles((theme) => ({
     head: {
@@ -84,7 +87,7 @@ function WhatsInYourFridge(props) {
     }, []);
 
     const getFridgeItems = async () => {
-      const response = await fetch('http://localhost:8000/api/fridgeFoods/');
+      const response = await fetch(`http://${API_URL}/api/fridgeFoods/`);
       const data = await response.json();
       setFridgeItems(data)
       console.log(data);

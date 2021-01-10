@@ -9,6 +9,9 @@ import {
 
 import "./upload.scss";
 
+const API_URL = 'bluewater10000.pythonanywhere.com'
+// const API_URL = 'localhost:8000'
+
 function Upload() {
   return <UploadReceipt />;
 }
@@ -39,7 +42,7 @@ class UploadReceipt extends Component {
     let form_data = new FormData();
     form_data.append('file', this.state.file, this.state.file.name);
     // let url = 'http://localhost:8000/api/receipts/';
-    let url = 'http://localhost:8000/api/receipts/';
+    let url = `http://${API_URL}/api/receipts/`;
     axios.post(url, form_data, {
       headers: {
         'content-type': 'multipart/form-data'
@@ -50,7 +53,8 @@ class UploadReceipt extends Component {
         })
         .catch(err => console.log(err))
     alert('Any food items have now been added to your fridge. Happy Eating!')
-    this.props.router.push('/homepage')  
+    // this.props.router.push('/homepage')  
+    window.location.href = "/homepage";
   };
 
   render() {

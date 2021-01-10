@@ -7,6 +7,8 @@ import {
 import carrot from './carrot.png';
 import axios from 'axios';
 
+const API_URL = 'bluewater10000.pythonanywhere.com'
+// const API_URL = 'localhost:8000'
 
 function Home() {
     return <HomePage />;
@@ -48,7 +50,7 @@ function Home() {
  
   const getExpiredItemsInFridge = async () => {
     console.log('bbb');
-      const response = await fetch('http://localhost:8000/api/fridgeFoods/expired');
+      const response = await fetch(`http://${API_URL}/api/fridgeFoods/expired`);
       const data = await response.json();
       setExpiredItemsInFridge(data)
       console.log(data);
@@ -56,7 +58,7 @@ function Home() {
 
   const getAboutToExpireItem = async () => {
     console.log('ccc');
-    const response = await fetch('http://localhost:8000/api/fridgeFoods/');
+    const response = await fetch(`http://${API_URL}/api/fridgeFoods/`);
     const data = await response.json();
     // for (var i = 0; i < data.length; i++) {
     //   if (data[i].days_to_expire == 0) {
