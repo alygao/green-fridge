@@ -1,0 +1,283 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:700,400|Poppins:400|Play:400|Roboto:700,400");
+* {
+  box-sizing: border-box;
+}
+.home-page {
+  align-items: flex-end;
+  background-color: var(--pixie-green);
+  display: flex;
+  flex-direction: column;
+  height: 1300px;
+  justify-content: flex-start;
+  padding: 30.8px 65px;
+  width: 1445px;
+}
+.home-page .alerts {
+  background-color: transparent;
+  height: 126px;
+  left: 0px;
+  letter-spacing: 0px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 0px;
+  width: 1314px;
+}
+.home-page .auto-flex {
+  align-items: flex-start;
+  align-self: center;
+  background-color: transparent;
+  display: inline-flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  height: 95px;
+  justify-content: flex-start;
+  margin-left: 1px;
+  margin-top: 51px;
+  min-width: 1312px;
+  width: auto;
+}
+.home-page .carrot {
+  background-color: transparent;
+  height: 170px;
+  left: 454px;
+  position: absolute;
+  top: 0px;
+  width: 153px;
+}
+.home-page .group-21 {
+  align-items: flex-start;
+  background-color: transparent;
+  display: inline-flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  height: 95px;
+  justify-content: flex-start;
+  margin-left: 79px;
+  min-width: 385px;
+  width: auto;
+}
+.home-page .group-22 {
+  align-items: flex-start;
+  background-color: transparent;
+  display: inline-flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  height: 95px;
+  justify-content: flex-start;
+  margin-left: 78px;
+  min-width: 385px;
+  width: auto;
+}
+.home-page .group-23 {
+  align-items: flex-start;
+  background-color: transparent;
+  display: inline-flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  height: 95px;
+  justify-content: flex-start;
+  min-width: 385px;
+  width: auto;
+}
+.home-page .overlap-group {
+  align-self: center;
+  background-color: transparent;
+  flex-shrink: 0;
+  height: 351px;
+  margin-left: 3px;
+  position: relative;
+  width: 1064px;
+}
+.home-page .overlap-group1 {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: 235px;
+  margin-top: 51px;
+  position: relative;
+  width: 1314px;
+}
+.home-page .overlap-group2 {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: 249px;
+  margin-top: 50px;
+  position: relative;
+  width: 1314px;
+}
+.home-page .recommended-recipe {
+  background-color: transparent;
+  height: 134px;
+  left: 0px;
+  letter-spacing: 0px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 0px;
+  width: 1314px;
+}
+.home-page .rectangle-7 {
+  background-color: var(--copperfield);
+  height: 221px;
+  left: 1px;
+  position: absolute;
+  top: 14px;
+  width: 1312px;
+}
+.home-page .rectangle-7-1 {
+  background-color: var(--copperfield);
+  height: 234px;
+  left: 1px;
+  position: absolute;
+  top: 15px;
+  width: 1312px;
+}
+.home-page .rectangle-8 {
+  background-color: var(--gold);
+  height: 124px;
+  left: 1px;
+  position: absolute;
+  top: 111px;
+  width: 1312px;
+}
+.home-page .rectangle-9 {
+  background-color: var(--gold);
+  height: 131px;
+  left: 1px;
+  position: absolute;
+  top: 118px;
+  width: 1312px;
+}
+.home-page .span1 {
+  color: rgba(0, 0, 0, 1);
+  font-family: "Roboto", Helvetica, Arial, serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+}
+.home-page .span2 {
+  color: rgba(0, 0, 0, 1);
+  font-family: "Roboto", Helvetica, Arial, serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  text-decoration: underline;
+}
+.home-page .text-1 {
+  background-color: transparent;
+  height: 182px;
+  left: 0px;
+  letter-spacing: 0px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 169px;
+  width: 1064px;
+}
+.home-page .text-2 {
+  background-color: transparent;
+  height: 66px;
+  left: 98px;
+  letter-spacing: 0px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 169px;
+  width: auto;
+}
+.home-page .text-3 {
+  background-color: transparent;
+  height: 22px;
+  left: 84px;
+  letter-spacing: 0px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 135px;
+  width: 1162px;
+}
+.home-page .text-4 {
+  background-color: transparent;
+  height: 23px;
+  left: 69px;
+  letter-spacing: 0px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 150px;
+  width: 1162px;
+}
+.home-page .upload-rec-ipt-button {
+  align-items: center;
+  background-color: var(--fruit-salad);
+  display: inline-flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  height: 95px;
+  justify-content: flex-end;
+  min-width: 385px;
+  padding: 0 24px;
+  width: auto;
+}
+.home-page .upload-receipt {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: 39px;
+  letter-spacing: 0px;
+  line-height: normal;
+  min-height: 39px;
+  text-align: center;
+  width: 335px;
+}
+.montserrat-bold-black-32px {
+  color: black;
+  font-family: "Montserrat", Helvetica, Arial, serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+}
+.montserrat-bold-white-32px {
+  color: white;
+  font-family: "Montserrat", Helvetica, Arial, serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+}
+.montserrat-normal-black-54px {
+  color: black;
+  font-family: "Montserrat", Helvetica, Arial, serif;
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 400;
+}
+.montserrat-normal-fruit-salad-37px {
+  color: var(--fruit-salad);
+  font-family: "Montserrat", Helvetica, Arial, serif;
+  font-size: 37px;
+  font-style: normal;
+  font-weight: 400;
+}
+.roboto-normal-black-20px {
+  color: black;
+  font-family: "Roboto", Helvetica, Arial, serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+}
+.roboto-normal-black-20px-2 {
+  color: black;
+  font-family: "Roboto", Helvetica, Arial, serif;
+  font-size: 20px;
+}
+:root {
+  --copperfield: rgba(230, 134, 104, 1);
+  --fruit-salad: rgba(81, 141, 90, 1);
+  --gold: rgba(235, 195, 158, 1);
+  --pixie-green: rgba(195, 219, 186, 1);
+}
+.valign-text-middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

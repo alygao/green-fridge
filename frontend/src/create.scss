@@ -1,0 +1,119 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700|Poppins:400|Play:400|Roboto:700,400");
+* {
+  box-sizing: border-box;
+}
+.create-account {
+  align-items: center;
+  background-color: var(--pixie-green);
+  display: flex;
+  flex-direction: column;
+  height: 1024px;
+  justify-content: flex-start;
+  padding: 84px 222px;
+  width: 1440px;
+}
+.create-account .confirm-password::placeholder {
+  color: rgba(153, 153, 153, 0.6);
+}
+.create-account .create-account {
+  align-self: flex-start;
+  background-color: transparent;
+  flex-shrink: 0;
+  height: 118px;
+  letter-spacing: 0px;
+  line-height: normal;
+  min-height: 118px;
+  text-align: center;
+  width: 940px;
+}
+.create-account .group-5 {
+  align-items: flex-start;
+  background-color: var(--fruit-salad);
+  display: inline-flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  height: 112px;
+  justify-content: flex-start;
+  margin-top: 51px;
+  min-width: 650px;
+  width: auto;
+}
+.create-account .overlap-group {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: 112px;
+  margin-left: 2px;
+  margin-top: 51px;
+  position: relative;
+  width: 652px;
+}
+.create-account .password::placeholder {
+  color: rgba(153, 153, 153, 0.6);
+}
+.create-account .rectangle- {
+  background-color: white;
+  height: 112px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 650px;
+}
+.create-account .register {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: 112px;
+  letter-spacing: 0px;
+  line-height: normal;
+  min-height: 112px;
+  text-align: center;
+  width: 644px;
+}
+.create-account .username {
+  background-color: transparent;
+  border: 0;
+  height: 112px;
+  left: 0px;
+  letter-spacing: 0px;
+  line-height: normal;
+  padding: 0;
+  position: absolute;
+  resize: none;
+  text-align: left;
+  top: 0px;
+  width: 652px;
+}
+.create-account .username::placeholder {
+  color: rgba(153, 153, 153, 0.6);
+}
+.play-normal-mountain-mist-48px {
+  color: var(--mountain-mist);
+  font-family: "Play", Helvetica, Arial, serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+}
+.poppins-normal-fruit-salad-96px {
+  color: var(--fruit-salad);
+  font-family: "Poppins", Helvetica, Arial, serif;
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 400;
+}
+.poppins-normal-white-72px {
+  color: white;
+  font-family: "Poppins", Helvetica, Arial, serif;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 400;
+}
+:root {
+  --fruit-salad: rgba(81, 141, 90, 1);
+  --mountain-mist: rgba(153, 153, 153, 1);
+  --pixie-green: rgba(195, 219, 186, 1);
+}
+.valign-text-middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

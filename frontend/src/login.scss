@@ -1,0 +1,163 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700|Poppins:400|Play:400|Roboto:400,700");
+* {
+  box-sizing: border-box;
+}
+.frame-2 {
+  align-items: center;
+  background-color: var(--pixie-green);
+  display: flex;
+  flex-direction: column;
+  height: 1024px;
+  justify-content: flex-start;
+  padding: 74px 107px;
+  width: 1440px;
+}
+.frame-2 .group-4 {
+  align-items: flex-start;
+  background-color: var(--fruit-salad);
+  display: inline-flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  height: 112px;
+  justify-content: flex-start;
+  margin-right: 102px;
+  margin-top: 49px;
+  min-width: 650px;
+  width: auto;
+}
+.frame-2 .line-1 {
+  background-color: transparent;
+  height: 3px;
+  left: 55px;
+  position: absolute;
+  top: 172px;
+  width: 1098px;
+}
+.frame-2 .log-in {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: 112px;
+  letter-spacing: 0px;
+  line-height: normal;
+  min-height: 112px;
+  text-align: center;
+  width: 644px;
+}
+.frame-2 .overlap-group {
+  margin-top: 49px;
+}
+.frame-2 .overlap-group1 {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: 112px;
+  margin-right: 100px;
+  margin-top: 47px;
+  position: relative;
+  width: 652px;
+}
+.frame-2 .overlap-group2 {
+  align-self: flex-end;
+  background-color: transparent;
+  flex-shrink: 0;
+  height: 175px;
+  position: relative;
+  width: 1224px;
+}
+.frame-2 .password::placeholder {
+  color: rgba(153, 153, 153, 0.6);
+}
+.frame-2 .rectangle- {
+  background-color: white;
+  height: 112px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 650px;
+}
+.frame-2 .sign-up {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: 46px;
+  letter-spacing: 0px;
+  line-height: normal;
+  margin-right: 108px;
+  margin-top: 111px;
+  min-height: 46px;
+  text-align: center;
+  width: 606px;
+}
+.frame-2 .text-1 {
+  background-color: transparent;
+  height: 174px;
+  left: 0px;
+  letter-spacing: 0px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 0px;
+  width: 1224px;
+}
+.frame-2 .username {
+  background-color: transparent;
+  border: 0;
+  height: 112px;
+  left: 0px;
+  letter-spacing: 0px;
+  line-height: normal;
+  padding: 0;
+  position: absolute;
+  resize: none;
+  text-align: left;
+  top: 0px;
+  width: 652px;
+}
+.frame-2 .username::placeholder {
+  color: rgba(0, 0, 0, 0.24);
+}
+.play-normal-black-48px {
+  color: var(--black);
+  font-family: "Play", Helvetica, Arial, serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+}
+.play-normal-mountain-mist-48px {
+  color: var(--mountain-mist);
+  font-family: "Play", Helvetica, Arial, serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+}
+.poppins-normal-fruit-salad-72px {
+  color: var(--fruit-salad);
+  font-family: "Poppins", Helvetica, Arial, serif;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 400;
+}
+.poppins-normal-fruit-salad-96px {
+  color: var(--fruit-salad);
+  font-family: "Poppins", Helvetica, Arial, serif;
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 400;
+}
+.poppins-normal-white-72px {
+  color: white;
+  font-family: "Poppins", Helvetica, Arial, serif;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 400;
+}
+:root {
+  --black: rgba(0, 0, 0, 0.4);
+  --fruit-salad: rgba(81, 141, 90, 1);
+  --mountain-mist: rgba(153, 153, 153, 1);
+  --pixie-green: rgba(195, 219, 186, 1);
+}
+.valign-text-middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
