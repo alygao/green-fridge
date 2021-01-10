@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/green-fridge/static/css/main.8f67416f.chunk.css",
+    "main.js": "/green-fridge/static/js/main.44951b14.chunk.js",
+    "main.js.map": "/green-fridge/static/js/main.44951b14.chunk.js.map",
+    "runtime-main.js": "/green-fridge/static/js/runtime-main.7198cb7a.js",
+    "runtime-main.js.map": "/green-fridge/static/js/runtime-main.7198cb7a.js.map",
+    "static/js/2.2743e978.chunk.js": "/green-fridge/static/js/2.2743e978.chunk.js",
+    "static/js/2.2743e978.chunk.js.map": "/green-fridge/static/js/2.2743e978.chunk.js.map",
+    "static/js/3.0e0adcd6.chunk.js": "/green-fridge/static/js/3.0e0adcd6.chunk.js",
+    "static/js/3.0e0adcd6.chunk.js.map": "/green-fridge/static/js/3.0e0adcd6.chunk.js.map",
+    "index.html": "/green-fridge/index.html",
+    "static/css/main.8f67416f.chunk.css.map": "/green-fridge/static/css/main.8f67416f.chunk.css.map",
+    "static/js/2.2743e978.chunk.js.LICENSE.txt": "/green-fridge/static/js/2.2743e978.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7198cb7a.js",
+    "static/js/2.2743e978.chunk.js",
+    "static/css/main.8f67416f.chunk.css",
+    "static/js/main.44951b14.chunk.js"
+  ]
+}
