@@ -1,287 +1,54 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:700,400|Roboto:700,400");
 * {
   box-sizing: border-box;
+  
 }
-.montserrat-bold-black-32px {
-  color: black;
-  font-family: "Montserrat", Helvetica, Arial, serif;
-  font-size: 32px;
+
+body {
+  background-color: #EBC39E
+}
+h1 {
+  font-family: Montserrat;
   font-style: normal;
-  font-weight: 700;
-}
-.montserrat-bold-copperfield-50px {
-  color: var(--copperfield);
-  font-family: "Montserrat", Helvetica, Arial, serif;
+  font-weight: bold;
   font-size: 50px;
-  font-style: normal;
-  font-weight: 700;
-}
-.roboto-bold-white-21px {
-  color: transparent;
-  font-family: "Roboto", Helvetica, Arial, serif;
-  font-size: 21px;
-}
-.roboto-normal-white-20px {
-  color: transparent;
-  font-family: "Roboto", Helvetica, Arial, serif;
-  font-size: 20px;
-}
-.roboto-normal-white-20px-2 {
-  color: transparent;
-  font-family: "Roboto", Helvetica, Arial, serif;
-  font-size: 20px;
-}
-.whats-in-your-fridge {
+  line-height: 61px;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  padding:50px;
+  /* identical to box height */
+  
+  /* display: flex; */
   align-items: center;
-  background-color: var(--gold);
-  display: flex;
-  flex-direction: column;
-  height: 1024px;
-  justify-content: flex-start;
-  padding: 48px 41px;
-  width: 1440px;
-}
-.whats-in-your-fridge .bought-date {
-  background-color: transparent;
-  height: 134px;
-  left: 280px;
-  letter-spacing: 0px;
-  line-height: normal;
-  position: absolute;
   text-align: center;
-  top: 0px;
-  width: 284px;
+  
+  color: #E68668;
 }
-.whats-in-your-fridge .carrot {
+
+p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+  padding: 0px 12px;
+  /* display: flex; */
+  align-items: center;
+  text-align: center;
+  color: #000000;
+}
+
+.carrot {
   background-color: transparent;
   flex-shrink: 0;
-  height: 126px;
-  width: 114px;
-}
-.whats-in-your-fridge .days-till-expiry {
-  background-color: transparent;
-  height: 134px;
-  left: 562px;
-  letter-spacing: 0px;
-  line-height: normal;
-  position: absolute;
-  text-align: center;
-  top: 0px;
-  width: 284px;
-}
-.whats-in-your-fridge .logo {
-  align-items: flex-start;
-  background-color: transparent;
-  background-size: 100% 100%;
-  display: inline-flex;
-  flex-direction: row;
   height: 160px;
-  justify-content: flex-start;
-  left: 0px;
-  min-width: 160px;
-  padding: 13px 23px;
-  position: absolute;
-  top: 0px;
-  width: auto;
+  margin:10px;
+  padding:5px;
 }
-.whats-in-your-fridge .name-of-item {
-  background-color: transparent;
-  height: 134px;
-  left: 0px;
-  letter-spacing: 0px;
-  line-height: normal;
-  position: absolute;
-  text-align: center;
-  top: 0px;
-  width: 282px;
-}
-.whats-in-your-fridge .overlap-group {
-  background-color: transparent;
-  flex-shrink: 0;
-  height: 535px;
-  margin-top: 28px;
-  position: relative;
-  width: 1128px;
-}
-.whats-in-your-fridge .overlap-group1 {
-  background-color: transparent;
-  flex-shrink: 0;
-  height: 231px;
-  margin-right: 83px;
-  position: relative;
-  width: 1275px;
-}
-.whats-in-your-fridge .rectangle-7 {
-  background-color: var(--copperfield);
-  height: 520px;
-  left: 1px;
-  position: absolute;
-  top: 15px;
-  width: 280px;
-}
-.whats-in-your-fridge .rectangle-7-1 {
-  background-color: var(--copperfield);
-  height: 520px;
-  left: 281px;
-  position: absolute;
-  top: 15px;
-  width: 282px;
-}
-.whats-in-your-fridge .rectangle-7-2 {
-  background-color: var(--copperfield);
-  height: 520px;
-  left: 563px;
-  position: absolute;
-  top: 15px;
-  width: 282px;
-}
-.whats-in-your-fridge .rectangle-7-3 {
-  background-color: var(--copperfield);
-  height: 520px;
-  left: 845px;
-  position: absolute;
-  top: 15px;
-  width: 282px;
-}
-.whats-in-your-fridge .rectangle-9 {
-  background-color: white;
-  height: 417px;
-  left: 1px;
-  position: absolute;
-  top: 118px;
-  width: 280px;
-}
-.whats-in-your-fridge .rectangle-9-1 {
-  background-color: white;
-  height: 417px;
-  left: 281px;
-  position: absolute;
-  top: 118px;
-  width: 282px;
-}
-.whats-in-your-fridge .rectangle-9-2 {
-  background-color: white;
-  height: 417px;
-  left: 563px;
-  position: absolute;
-  top: 118px;
-  width: 282px;
-}
-.whats-in-your-fridge .rectangle-9-3 {
-  background-color: white;
-  height: 417px;
-  left: 845px;
-  position: absolute;
-  top: 118px;
-  width: 282px;
-}
-.whats-in-your-fridge .remove {
-  background-color: transparent;
-  height: 134px;
-  left: 844px;
-  letter-spacing: 0px;
-  line-height: normal;
-  position: absolute;
-  text-align: center;
-  top: 0px;
-  width: 284px;
-}
-.whats-in-your-fridge .span1-1 {
-  color: rgba(255, 0, 0, 1);
-  font-family: "Roboto", Helvetica, Arial, serif;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-}
-.whats-in-your-fridge .span1-I88zsT {
-  color: rgba(255, 1, 1, 1);
-  font-family: "Roboto", Helvetica, Arial, serif;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 700;
-}
-.whats-in-your-fridge .span1-PxuYZg {
-  color: rgba(255, 0, 0, 1);
-  font-family: "Roboto", Helvetica, Arial, serif;
-  font-size: 21px;
-  font-style: normal;
-  font-weight: 700;
-}
-.whats-in-your-fridge .span2 {
-  color: rgba(0, 0, 0, 1);
-  font-family: "Roboto", Helvetica, Arial, serif;
-  font-size: 21px;
-  font-style: normal;
-  font-weight: 700;
-}
-.whats-in-your-fridge .span2-1 {
-  color: rgba(0, 0, 0, 1);
-  font-family: "Roboto", Helvetica, Arial, serif;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-}
-.whats-in-your-fridge .text-1 {
-  background-color: transparent;
-  height: 143px;
-  left: 64px;
-  letter-spacing: 0px;
-  line-height: normal;
-  position: absolute;
-  text-align: center;
-  top: 88px;
-  width: 1211px;
-}
-.whats-in-your-fridge .text-2 {
-  background-color: transparent;
-  height: 253px;
-  left: 17px;
-  letter-spacing: 0px;
-  line-height: normal;
-  position: absolute;
-  text-align: center;
-  top: 150px;
-  width: 250px;
-}
-.whats-in-your-fridge .text-3 {
-  background-color: transparent;
-  height: 253px;
-  left: 297px;
-  letter-spacing: 0px;
-  line-height: normal;
-  position: absolute;
-  text-align: center;
-  top: 150px;
-  width: 251px;
-}
-.whats-in-your-fridge .text-4 {
-  background-color: transparent;
-  height: 253px;
-  left: 579px;
-  letter-spacing: 0px;
-  line-height: normal;
-  position: absolute;
-  text-align: center;
-  top: 150px;
-  width: 251px;
-}
-.whats-in-your-fridge .text-5 {
-  background-color: transparent;
-  height: 275px;
-  left: 861px;
-  letter-spacing: 0px;
-  line-height: normal;
-  position: absolute;
-  text-align: center;
-  top: 139px;
-  width: 251px;
-}
-:root {
-  --copperfield: rgba(230, 134, 104, 1);
-  --gold: rgba(235, 195, 158, 1);
-}
-.valign-text-middle {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+
+.table-button {
+  color: black;
+  background-color: #E68668;
+  cursor: pointer;
 }

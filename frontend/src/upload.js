@@ -1,49 +1,91 @@
-import React from "react";
+import React, { Component, Redirect } from 'react';
+import axios from 'axios';
+import logo from './logo.png';
+
+
 import {
   Link,
 } from "react-router-dom";
+
 import "./upload.scss";
 
 function Upload() {
-  return <UploadReceipt {...uploadReceiptData} />;
+  return <UploadReceipt />;
 }
 
 export default Upload;
 
 
-function UploadReceipt(props) {
-  const { uploadReceipt, logo, carrot, chooseAFile, submit } = props;
+class UploadReceipt extends Component {
+  state = {
+    file: null
+  };
 
-  return (
-    <form className="upload-receipt" name="form2" action="form2" method="post">
-      <div className="overlap-group">
-        <h1 className="upload-receipt valign-text-middle border-class-1 montserrat-bold-copperfield-50px">
-          {uploadReceipt}
-        </h1>
-        <div className="logo" style={{ backgroundImage: `url(${logo})` }}>
-          <img className="carrot" src={carrot} />
-        </div>
-      </div>
-      <a href="javascript:SubmitForm('form2')">
-        <div className="upload-rec-ipt-button">
-          <div className="choose-a-file valign-text-middle border-class-1 montserrat-bold-white-32px">
-            {chooseAFile}
+  handleChange = (e) => {
+    this.setState({
+      [e.target.id]: e.target.value
+    })
+  };
+
+  handleImageChange = (e) => {
+    this.setState({
+      file: e.target.files[0]
+    })
+  };  
+
+  handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(this.state);
+    let form_data = new FormData();
+    form_data.append('file', this.state.file, this.state.file.name);
+    // let url = 'http://localhost:8000/api/receipts/';
+    let url = 'http://localhost:8000/api/receipts/';
+    axios.post(url, form_data, {
+      headers: {
+        'content-type': 'multipart/form-data'
+      }
+    })
+        .then(res => {
+          console.log(res.data);
+        })
+        .catch(err => console.log(err))
+    alert('Any food items have now been added to your fridge. Happy Eating!')
+    this.props.router.push('/homepage')  
+  };
+
+  render() {
+    return (
+      <div>
+        <Link to="/homepage"> 
+          <img className="carrot" src={logo} ></img>
+        </Link>
+        <h1 className="upload-recipe-heading">Upload Receipt</h1>
+        <p className="upload-recipe-msg">Please only submit receipts that are either png or jpg form.</p>
+        <form onSubmit={this.handleSubmit}>
+          <div className="buttons">
+            <p>
+            <div className="choose-file-button">
+            <label className="custom-file-upload">
+              <input type="file"
+                    id="image"
+                    accept="image/png, image/jpeg"  onChange={this.handleImageChange} size="60" required/>
+              choose a file
+          </label>
+            </div>
+            </p>
+            
+            <div className="submit-button">
+              <label className="submit-file">
+                <input type="submit" size="60" />
+                submit
+              </label>
+            </div>
           </div>
-        </div>
-      </a>
-      <a href="javascript:SubmitForm('form2')">
-        <div className="upload-rec-ipt-button-1">
-          <div className="submit valign-text-middle border-class-1 montserrat-bold-white-20px">{submit}</div>
-        </div>
-      </a>
-    </form>
-  );
+        </form>
+      </div>
+    );
+  }
 }
-const uploadReceiptData = {
-    uploadReceipt: "Upload Receipt",
-    logo: "https://anima-uploads.s3.amazonaws.com/projects/5ff9b0d037305af6fed446e1/releases/5ff9d67a52d314f96bfdf13e/img/ellipse-1-1@2x.png",
-    carrot: "https://anima-uploads.s3.amazonaws.com/projects/5ff9b0d037305af6fed446e1/releases/5ff9d67a52d314f96bfdf13e/img/carrot-2@2x.png",
-    chooseAFile: "choose a file",
-    submit: "submit",
-};
+
+
 

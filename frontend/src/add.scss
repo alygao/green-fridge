@@ -2,188 +2,69 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:700,400|Roboto:700,400");
 * {
   box-sizing: border-box;
+  
 }
-.add-fridge-item {
-  align-items: flex-start;
-  background-color: var(--gold);
-  display: flex;
-  flex-direction: column;
-  height: 1024px;
-  justify-content: flex-start;
-  padding: 48px 41px;
-  width: 1440px;
+
+body {
+  background-color: #EBC39E
 }
-.add-fridge-item .add {
-  background-color: transparent;
-  flex-shrink: 0;
-  height: 15px;
-  letter-spacing: 0px;
-  line-height: normal;
-  min-height: 15px;
+h1 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 61px;
+  margin-top: 2vh;
+  /* identical to box height */
+  
+  /* display: flex; */
+  align-items: center;
   text-align: center;
-  width: 210px;
+  
+  color: #E68668;
 }
-.add-fridge-item .add-fridge-item {
-  align-self: flex-end;
-  background-color: transparent;
-  flex-shrink: 0;
-  height: 61px;
-  letter-spacing: 0px;
-  line-height: normal;
-  margin-left: 295px;
-  min-height: 61px;
-  min-width: 428px;
+
+p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+  padding: 0px 12px;
+  /* display: flex; */
+  align-items: center;
   text-align: center;
-  width: auto;
+  color: #000000;
 }
-.add-fridge-item .auto-flex {
-  align-items: flex-start;
+
+.carrot {
   background-color: transparent;
-  display: inline-flex;
-  flex-direction: row;
-  flex-shrink: 0;
-  height: 190px;
-  justify-content: flex-start;
-  min-width: 883px;
-  width: auto;
-}
-.add-fridge-item .carrot {
-  background-color: transparent;
-  flex-shrink: 0;
-  height: 126px;
-  width: 114px;
-}
-.add-fridge-item .insert- {
-  background-color: transparent;
-  border: 0;
-  height: 95px;
-  left: 318px;
-  letter-spacing: 0px;
-  line-height: normal;
-  padding: 0;
-  position: absolute;
-  resize: none;
-  text-align: left;
-  top: 0px;
-  width: 487px;
-}
-.add-fridge-item .insert-::placeholder {
-  color: rgba(172, 172, 172, 0.6);
-}
-.add-fridge-item .logo {
-  align-items: flex-start;
-  background-color: transparent;
-  background-size: 100% 100%;
-  display: inline-flex;
-  flex-direction: row;
   flex-shrink: 0;
   height: 160px;
-  justify-content: flex-start;
-  min-width: 160px;
-  padding: 13px 23px;
-  width: auto;
+  margin:10px;
+  padding:5px;
 }
-.add-fridge-item .name {
-  background-color: transparent;
-  height: 46px;
-  left: 0px;
-  letter-spacing: 0px;
-  line-height: normal;
-  position: absolute;
-  text-align: center;
-  top: 22px;
-  width: 421px;
-}
-.add-fridge-item .overlap-group {
-  margin-top: 12px;
-}
-.add-fridge-item .overlap-group1 {
-  align-items: flex-start;
-  align-self: center;
-  background-color: var(--fuscous-gray);
-  display: inline-flex;
-  flex-direction: row;
-  flex-shrink: 0;
-  height: 59px;
-  justify-content: flex-end;
-  margin-top: 139px;
-  min-width: 240px;
-  padding: 21.8px 14.2px;
-  width: auto;
-}
-.add-fridge-item .overlap-group2 {
-  background-color: transparent;
-  flex-shrink: 0;
-  height: 95px;
-  margin-left: 137px;
-  margin-top: 60px;
-  position: relative;
-  width: 805px;
-}
-.add-fridge-item .rectangle-4 {
-  background-color: white;
-  height: 95px;
-  left: 318px;
-  position: absolute;
-  top: 0px;
-  width: 485px;
-}
-.add-fridge-item .text-1 {
-  align-self: center;
-  background-color: transparent;
-  flex-shrink: 0;
-  height: 23px;
-  letter-spacing: 0px;
-  line-height: normal;
-  margin-left: 2.32px;
-  margin-top: 24px;
-  min-height: 23px;
-  text-align: center;
-  width: 1162px;
-}
-.montserrat-bold-copperfield-50px {
-  color: var(--copperfield);
-  font-family: "Montserrat", Helvetica, Arial, serif;
-  font-size: 50px;
-  font-style: normal;
-  font-weight: 700;
-}
-.montserrat-bold-fuscous-gray-38px {
-  color: var(--fuscous-gray);
-  font-family: "Montserrat", Helvetica, Arial, serif;
-  font-size: 38px;
-  font-style: normal;
-  font-weight: 700;
-}
-.montserrat-bold-white-20px {
-  color: white;
-  font-family: "Montserrat", Helvetica, Arial, serif;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 700;
-}
-.montserrat-normal-silver-chalice-48px {
-  color: var(--silver-chalice);
-  font-family: "Montserrat", Helvetica, Arial, serif;
-  font-size: 48px;
-  font-style: normal;
-  font-weight: 400;
-}
-.roboto-normal-black-20px {
-  color: black;
-  font-family: "Roboto", Helvetica, Arial, serif;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-}
-:root {
-  --copperfield: rgba(230, 134, 104, 1);
-  --fuscous-gray: rgba(86, 86, 86, 1);
-  --gold: rgba(235, 195, 158, 1);
-  --silver-chalice: rgba(172, 172, 172, 1);
-}
-.valign-text-middle {
+
+form {
+  // background-color: green;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  text-align: center;
   justify-content: center;
+  height: 200px;
+  margin: auto;
+  flex-direction: column;
+}
+
+.add-item-field {
+  display: inline-block;
+  height: 200vw;
+  width: 50vw;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  align-items: center;
+  text-align: left;
+  margin-top: 75px;
 }

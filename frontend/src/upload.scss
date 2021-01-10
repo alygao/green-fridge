@@ -1,134 +1,137 @@
-@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700|Poppins:400|Play:400|Roboto:400,700");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@700&display=swap');
 * {
   box-sizing: border-box;
 }
-.montserrat-bold-copperfield-50px {
-  color: var(--copperfield);
-  font-family: "Montserrat", Helvetica, Arial, serif;
+
+.input {
+  background-color: transparent;
+}
+
+
+h1 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
   font-size: 50px;
-  font-style: normal;
-  font-weight: 700;
+  line-height: 61px;
+  margin-top: 2vh;
+  /* identical to box height */
+  
+  /* display: flex; */
+  align-items: center;
+  text-align: center;
+  
+  color: #E68668;
 }
-.montserrat-bold-white-20px {
-  color: white;
-  font-family: "Montserrat", Helvetica, Arial, serif;
+
+p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
   font-size: 20px;
-  font-style: normal;
-  font-weight: 700;
-}
-.montserrat-bold-white-32px {
-  color: white;
-  font-family: "Montserrat", Helvetica, Arial, serif;
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 700;
-}
-.upload-receipt {
+  line-height: 23px;
+  padding: 0px 12px;
+  /* display: flex; */
   align-items: center;
-  background-color: var(--gold);
+  text-align: center;
+  color: #000000;
+}
+
+input {
+  display: none;
+}
+
+.form {
+  margin: auto;
   display: flex;
-  flex-direction: column;
-  height: 1024px;
-  justify-content: flex-start;
-  padding: 48px 41px;
-  width: 1440px;
-}
-.upload-receipt .carrot {
-  background-color: transparent;
-  flex-shrink: 0;
-  height: 126px;
-  width: 114px;
-}
-.upload-receipt .choose-a-file {
-  background-color: transparent;
-  flex-shrink: 0;
-  height: 39px;
-  letter-spacing: 0px;
-  line-height: normal;
-  min-height: 39px;
+  background-color: blue;
   text-align: center;
-  width: 488px;
 }
-.upload-receipt .logo {
-  align-items: flex-start;
-  background-color: transparent;
-  background-size: 100% 100%;
-  display: inline-flex;
-  flex-direction: row;
-  height: 160px;
-  justify-content: flex-start;
-  left: 0px;
-  min-width: 160px;
-  padding: 13px 23px;
-  position: absolute;
-  top: 0px;
-  width: auto;
-}
-.upload-receipt .overlap-group {
-  background-color: transparent;
-  flex-shrink: 0;
-  height: 231px;
-  margin-right: 83px;
-  position: relative;
-  width: 1275px;
-}
-.upload-receipt .submit {
-  background-color: transparent;
-  flex-shrink: 0;
-  height: 15px;
-  letter-spacing: 0px;
-  line-height: normal;
-  min-height: 15px;
-  text-align: center;
-  width: 210px;
-}
-.upload-receipt .upload-rec-ipt-button {
-  align-items: center;
-  background-color: var(--fruit-salad);
-  display: inline-flex;
-  flex-direction: row;
-  flex-shrink: 0;
-  height: 95px;
-  justify-content: flex-end;
-  margin-right: 40px;
-  margin-top: 139px;
-  min-width: 562px;
-  padding: 0 36px;
-  width: auto;
-}
-.upload-receipt .upload-rec-ipt-button-1 {
-  align-items: flex-start;
-  background-color: var(--fuscous-gray);
-  display: inline-flex;
-  flex-direction: row;
-  flex-shrink: 0;
-  height: 59px;
-  justify-content: flex-end;
-  margin-top: 34px;
-  min-width: 240px;
-  padding: 21.8px 14.2px;
-  width: auto;
-}
-.upload-receipt .upload-receipt {
-  background-color: transparent;
-  height: 143px;
-  left: 64px;
-  letter-spacing: 0px;
-  line-height: normal;
-  position: absolute;
-  text-align: center;
-  top: 88px;
-  width: 1211px;
-}
-:root {
-  --copperfield: rgba(230, 134, 104, 1);
-  --fruit-salad: rgba(81, 141, 90, 1);
-  --fuscous-gray: rgba(86, 86, 86, 1);
-  --gold: rgba(235, 195, 158, 1);
-}
-.valign-text-middle {
-  display: flex;
+
+.buttons {
+  display:flex;
+  // background-color: purple;
   flex-direction: column;
   justify-content: center;
+}
+
+.choose-file-button {
+  background-color: #518D5A;
+  align-items: center;
+  display: inline-block;
+  justify-content: center;
+  width: 45vw;
+  height: 95px;
+  margin-top: 10vh;
+  
+}
+
+.choose-file-button:hover {
+  background-color: #62af6f;
+  transition: 0.5s
+}
+
+.custom-file-upload {
+  // border: 1px solid #ccc;
+  
+  // background-color:red;
+  color: white;
+  display: inline-block;
+  padding: 0px 12px;
+  cursor: pointer;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 95px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.submit-button {
+  background-color: #565656;
+  // align-items: center;
+  display: inline-block;
+  // justify-content: center;
+  // text-align: center;
+  width: 15vw;
+  height: 60px;
+  margin-top: 2vh;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.submit-button:hover {
+  background-color: #333333;
+  transition: 0.5s
+}
+
+.submit-file{
+  // background-color: red;
+  color: white;
+  display: inline-block;
+  padding: 0px 12px;
+  cursor: pointer;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 60px;
+
+  display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  justify-content: center;
+}
+
+.carrot {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: 160px;
+  margin:10px;
+  padding:5px;
 }

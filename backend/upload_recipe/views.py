@@ -60,7 +60,7 @@ class FridgeFoodView(APIView):
       # print(self.kwargs)
       if (len(self.kwargs) == 0):
             print("no pk")
-            fridgeFoods = FridgeFood.objects.all().filter(removed_from_fridge=False)
+            fridgeFoods = FridgeFood.objects.all().filter(removed_from_fridge=False).order_by('days_to_expire')
             serializer = FridgeFoodSerializer(fridgeFoods, many=True)
       else:
             print("pk = " + str(self.kwargs['pk']))
