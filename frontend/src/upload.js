@@ -1,10 +1,14 @@
 import React from "react";
+import {
+  Link,
+} from "react-router-dom";
+import "./upload.scss";
 
-function App() {
+function Upload() {
   return <UploadReceipt {...uploadReceiptData} />;
 }
 
-export default App;
+export default Upload;
 
 
 function UploadReceipt(props) {

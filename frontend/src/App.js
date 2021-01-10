@@ -5,6 +5,7 @@ import View from "./fridge";
 import Add from "./add";
 import LogIn from "./login";
 import Create from "./create.js";
+import Upload from "./upload";
 import {
   BrowserRouter as Router,
   Switch,
@@ -19,8 +20,8 @@ import {
  function App() {
   return ( <Router>
     <Switch>
-    <Route path="homepage/upload">
-    <Add />
+    <Route path="/homepage/upload">
+          <Upload />
         </Route>
         <Route path="/homepage/add">
         <Add />
